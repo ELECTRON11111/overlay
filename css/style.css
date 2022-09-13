@@ -91,7 +91,7 @@ body {
     }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
     body {
         background: linear-gradient(#8000FF, #6409ed);
         margin: 5px;
