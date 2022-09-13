@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay Clone</title>
+
+    <!-- Google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav-wrapper">
+            <h3>awesomeservice</h3>
+
+            <div class="link-btn">
+                <div class="links">
+                    <span>Home</span>
+                    <span>Services</span>
+                    <span>FAQ</span>
+                </div>
+    
+                <button id="btn">Become a member</button>
+            </div>
+        </div>
+
+        <!-- Bold text centered -->
+        <div class="middle-text">
+            <h1>Go Big <br>Or Go Home</h1>
+        </div>
+    </div>
+</body>
+<script>
+    // take element with ID button
+    const btn = document.querySelector('#btn');
+
+    function goToSubscribe(){
+        location.href = "./subscribe.html"
+    }
+
+    // On click, go to subscribe page
+    btn.addEventListener('click', goToSubscribe);
+</script>
+</html>

@@ -1,0 +1,99 @@
+/* Remember sans-serif is the font without the tiny lines */
+
+body {
+    background: url(../Images/Rectangle\ 1.png), #8000FF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.nav-wrapper > h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.wrapper  h1 {
+    font-weight: 700;
+    display: flex;
+    font-size: 5.625em;
+    line-height: 100px;
+    color: #FFFFFF;
+}
+
+.middle-text {
+    position: absolute;
+    left: 24%;
+    top: 16rem;
+    display: flex;
+    align-items: center;
+}
+
+.link-btn {
+    display: flex;
+}
+
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 6;
+}
+
+.links > span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    padding-right: 3.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+#btn {
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+    width: 208px;
+    height: 40px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    cursor: pointer;
+}
+
+#btn:hover {
+    scale: 1.1;
+    transition: 0.6s;
+    /* transition: ease-out; */
+}
+
+@media (max-width: 460px) {
+    .middle-text {
+        left: 10%;
+    }
+}
+
+@media (max-width: 780px) {
+    .links {
+        display: none;
+    }
+}
+
+@media (max-width: 1150px) {
+    body {
+        background: linear-gradient(#8000FF, #6409ed);
+        margin: 5px;
+    }
+}
