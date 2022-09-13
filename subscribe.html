@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe!</title>
+    <!-- Google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="subscribe.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- content -->
+        <div class="content">
+            <div class="left">
+                <div class="text">
+                    <h1>It's so easy</h1>
+                    <h3>A subscription is $9 per month</h3>
+                </div>
+
+                <div class="card-wrapper">
+                    <div id="card1" class="card">
+                        <h4>Subscribe for $9 per month</h4>
+                        <p>This is the most popular option across our members. Join now, and cancel at any time!</p>
+                        <button id="btn1" class="btn">
+                            Subscribe Now
+                        </button>
+                    </div>
+                    <div id="card2" class="card">
+                        <h4>Pay $99 Once</h4>
+                        <p>This is the most popular option across our members. Join now, and cancel at any time!</p>
+                        <button id="btn2" class="btn">
+                            Pay once
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links and social media -->
+            <div class="right">
+                <ul>
+                    <p>Home</p>
+                    <p>Services</p>
+                    <p>FAQ</p>
+                    <p>Contact us</p>
+                </ul>
+
+                <div class="icons">
+                    <img src="./Images/tw.png" alt="tw">
+                    <img src="./Images/fb.png" alt="fb">
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <img src="./Images/Vector.png" alt="img" srcset="">
+        </section>
+    </div>
+
+    <script>
+        // Pick image whoose src attribute ends with the "r.png"
+        const cancel = document.querySelector('[src $= "r.png"]');
+
+        function goToIndex(){
+            location.href = "./index.html"
+        }
+
+        // On click, go to index page
+        cancel.addEventListener('click', goToIndex);
+    </script>
+</body>
+</html>
